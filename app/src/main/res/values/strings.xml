@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NagyHazi</string>
+    <string name="Edit_Top_Score">Edit Top Score</string>
+    <string name="top_scores">Top scores</string>
+    <string name="option">Option</string>
+    <string name="your_score">your score</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="pick_a_color">pick a color</string>
+    <string name="save_and_exit">Save and exit</string>
+    <string name="exit">Exit</string>
+    <string name="name">Name</string>
+</resources>

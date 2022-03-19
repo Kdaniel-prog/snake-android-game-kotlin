@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="40dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="60dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:src="@drawable/title" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_dark_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wood_buton" />
+        <TextView
+            android:id="@+id/endScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="@color/cardview_dark_background"
+            android:textColor="@color/white"
+            android:text="Enter your name"
+            android:textSize="34sp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <EditText
+            android:id="@+id/etPlayerName"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_dark_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wood_buton" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="@color/cardview_dark_background"
+            android:textColor="@color/white"
+            android:text="@string/start"
+            android:textSize="34sp" />
+
+    </FrameLayout>
+</LinearLayout>
+

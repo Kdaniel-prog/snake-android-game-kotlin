@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/cardview_dark_background"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/GameScoreTv"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="name"
+            android:textSize="16dp"
+            android:textColor="@color/white"></TextView>
+    </FrameLayout>
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:id="@+id/GameSurfaceView"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+    </SurfaceView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@color/cardview_dark_background">
+
+        <ImageButton
+            android:id="@+id/LeftRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="left"
+            android:background="@color/cardview_dark_background"
+            android:rotationY="180"
+            android:src="@android:drawable/ic_menu_rotate"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/RightRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/cardview_dark_background"
+            android:gravity="right"
+            android:src="@android:drawable/ic_menu_rotate"></ImageButton>
+
+    </FrameLayout>
+
+</LinearLayout>
